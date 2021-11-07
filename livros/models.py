@@ -1,6 +1,8 @@
 from django.db import models
+from autores.models import Autor
 
 class Livro(models.Model):
+    autor = models.ForeignKey(Autor, on_delete=models.CASCADE)
     titulo = models.CharField(max_length=200)
     descricao = models.TextField()
     paginas = models.IntegerField()
