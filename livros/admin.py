@@ -11,5 +11,3 @@ class ExibeLivro(admin.ModelAdmin):
 
 admin.site.register(Livro, ExibeLivro)
 
-
-
